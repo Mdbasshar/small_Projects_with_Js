@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 1.225rem;
+            font-family: 'Segoe UI';
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            padding: 1rem 0;
+        }
+        .nav-section{
+            flex: 2;
+            text-align: right;
+            padding-right: 1.5rem;
+        }
+        .nav-section ul{
+            position: sticky;
+            top: 10px;
+        }
+        .nav-section ul li{
+            list-style: none;
+            margin-block: 1rem;
+        }
+
+        .nav-section ul li a {
+            padding: 5px 10px;
+            text-decoration: none;
+            color: rgb(114, 194, 221);
+
+        }
+
+        .nav-section a.active{
+            background-color: lightblue;
+            color: #fff;
+        }
+
+        .section-area{
+            flex: 5;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav-section">
+        <ul>
+            <li><a href="#section-1">Section 1</a></li>
+            <li><a href="#section-2">Section 2</a></li>
+            <li><a href="#section-3">Section 3</a></li>
+        </ul>
+    </nav>
+    <article class="section-area">
+        <section id="section-1">
+            <h1 class="section-title">Section 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, consectetur adipisicing elit. Quae esse magnam provident? adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia harum ut ducimus fugit, iure in officiis veniam commodi.Quaerat, asperiores recusandae. Ullam suscipit tempora unde at neque dignissimos, dolorem ad. <br> <br> Qui blanditiis ducimus dolorem temporibus quam molestiae ex voluptatem excepturi, non esse harum vitae, laborum architecto minus ipsam veritatis? Recusandae unde est esse natus quis neque saepe ea nobis laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga repellat totam voluptatem debitis. Exercitationem, quasi. Nulla, pariatur illum! Eum, reprehenderit iure. Labore, ipsa repudiandae!</p>
+        </section>
+        <section id="section-2">
+            <h1 class="section-title">Section 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quis architecto? Corrupti impedit odit architecto, debitis eos nulla quae error in illo? Quaerat, asperiores recusandae. Ullam suscipit tempora unde at neque dignissimos, dolorem ad. Qui Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur accusamus odio debitis autem, dolores quo, ullam cumque ipsa quia veritatis! Amet, iste officiis? blanditiis ducimus dolorem temporibus quam molestiae ex voluptatem excepturi, non esse harum vitae, laborum architecto minus ipsam veritatis? Recusandae unde est esse natus quis neque saepe ea nobis laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam perferendis sunt vero distinctio ducimus sapiente, non eligendi dolorem.</p>
+        </section>
+        <section id="section-3">
+            <h1 class="section-title">Section 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, asperiores recusandae. Ullam suscipit tempora unde at neque dignissimos, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quaerat iste cumque dicta? Expedita corporis recusandae voluptatem facere.dolorem ad. Qui blanditiis ducimus dolorem temporibus quam molestiae ex voluptatem excepturi, non esse harum vitae, laborum architecto minus ipsam veritatis? <br> <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium vel ipsam quae numquam pariatur totam officia autem architecto dolor eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptate at necessitatibus doloribus veniam eius distinctio blanditiis sit modi laudantium, tempora aliquid consequuntur. Recusandae unde est esse natus quis neque saepe ea nobis laboriosam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, magni suscipit?</p>
+        </section>
+    </article>
+    <script src="sticky_nav.js"></script>
+</body>
+</html>

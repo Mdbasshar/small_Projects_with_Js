@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #sortable-table{
+    display: flex;
+    gap: 1rem;
+} */
+
+table ,th{
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    border: 1px solid #000;
+}
+
+table tbody tr td{
+    padding-right: 1rem;
+}
+
+th > span{
+    margin: .25rem;
+    cursor: pointer;
+}
