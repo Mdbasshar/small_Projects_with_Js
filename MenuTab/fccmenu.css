@@ -1,0 +1,97 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #deebf5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* menu */
+.menu, .title{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 2.5rem;
+    margin: 5px;
+}
+.underline{
+    width: 90px;
+    height: 3px;
+    background: #cf840b;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.btn-conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.btn{
+    color: #cf840b99;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin: 6px;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+}
+.btn:focus{
+    color: #cf840b;
+    border: 2px solid #cf840b;
+}
+.btn:hover{
+    color :#fff;
+    background: #cf840b;
+}
+/* Menu-Items */
+.section-center{
+    max-width: 1300px;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 0.5rem;
+}
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #cf840b;
+    image-rendering: -webkit-optimize-contrast;
+}
+header{
+    margin: 0 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+}
+h4{
+    display: inline-block;
+    font-size: 1.4rem;
+}
+.price{
+    color: #cf840b;
+}
+.item-text{
+    margin: 0 10px;
+    padding: 15px 0;
+}
